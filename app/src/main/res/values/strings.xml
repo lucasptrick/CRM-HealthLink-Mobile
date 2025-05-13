@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CRM-HealthLink</string>
+    <string name="menu_readable_text">Mennu superior direito</string>
+    <string name="text_h1">Agendar Consulta</string>
+    <string name="iconcrm">Icone_CRM</string>
+    <string name="menu">menu</string>
+    <string name="i">menu</string>
+    <string name="text_h2">Selecione uma Especialidade:</string>
+    <string name="input_selecionar_data">dd/mm/aaaa</string>
+</resources>
