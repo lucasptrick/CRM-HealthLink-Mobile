@@ -16,51 +16,57 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" >
+        app:layout_constraintVertical_bias="0.498"
+        tools:ignore="TextSizeCheck">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_h1"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginTop="13dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/text_h1"
+            android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="VisualLintOverlap" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/ffffff"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="16dp"
-            />
+            android:background="@color/ffffff" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_h2"
-            android:layout_marginTop="50dp"
             android:layout_marginStart="20dp"
-            />
+            android:layout_marginTop="50dp"
+            android:text="@string/text_h2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="130dp"
+            android:text="@string/text_h3" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:layout_marginTop="70dp"
             android:layout_marginStart="30dp"
-            />
+            android:layout_marginTop="70dp"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextDate2"
-            android:layout_width="wrap_content"
+            android:layout_width="211dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="150dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/input_selecionar_data"
@@ -68,7 +74,17 @@
             android:minHeight="48dp"
             android:textColorHint="#546E7A" />
 
-
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="205dp"
+            android:backgroundTint="#4CAF50"
+            android:minHeight="48dp"
+            android:text="@string/button_MarcarConsulta"
+            android:textColor="#263238"
+            tools:ignore="TouchTargetSizeCheck" />
     </FrameLayout>
 
     <androidx.appcompat.widget.Toolbar

@@ -5,6 +5,10 @@
     <string name="iconcrm">Icone_CRM</string>
     <string name="menu">menu</string>
     <string name="i">menu</string>
+
     <string name="text_h2">Selecione uma Especialidade:</string>
+    <string name="text_h3">Selecione uma Data:</string>
     <string name="input_selecionar_data">dd/mm/aaaa</string>
+    <string name="button_MarcarConsulta">Marcar Consulta</string>
+
 </resources>
