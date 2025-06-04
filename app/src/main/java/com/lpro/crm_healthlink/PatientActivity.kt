@@ -5,6 +5,8 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
+
 
 class PatientActivity : AppCompatActivity(),
     HeaderFragment.OnMenuButtonClickListener {
@@ -39,10 +41,10 @@ class PatientActivity : AppCompatActivity(),
         loadFragment(MinhasConsultasFragment())
     }
 
-    // Função genérica para trocar fragments
+    // Função genérica para trocar fragments usando Fragment KTX
     private fun loadFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainerViewContent, fragment)
-            .commit()
+        supportFragmentManager.commit {
+            replace(R.id.fragmentContainerViewContent, fragment)
+        }
     }
 }

@@ -40,15 +40,25 @@ android {
 }
 
 dependencies {
-
+    // AndroidX e Material
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.annotation)
+
+    // Lifecycle
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    // Fragment KTX
+    implementation("androidx.fragment:fragment-ktx:1.8.0")
+
+    // Core KTX
+    implementation("androidx.core:core-ktx:1.16.0")
+
+    // Testes
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
