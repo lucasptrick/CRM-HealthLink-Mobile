@@ -2,13 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/fragment_agendar_consulta"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E4E3E3"
-    tools:context=".AgendarConsultaActivity">
+    android:background="#E4E3E3">
 
     <FrameLayout
+        android:id="@+id/frameLayout2"
         android:layout_width="410dp"
         android:layout_height="250dp"
         android:background="#F8F8F8"
@@ -27,8 +27,7 @@
             android:layout_marginTop="13dp"
             android:text="@string/text_h1"
             android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="VisualLintOverlap" />
+            android:textStyle="bold" />
 
         <View
             android:layout_width="match_parent"
@@ -68,7 +67,6 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="150dp"
             android:autofillHints=""
-            android:ems="10"
             android:hint="@string/input_selecionar_data"
             android:inputType="date"
             android:minHeight="48dp"
@@ -86,44 +84,5 @@
             android:textColor="#263238"
             tools:ignore="TouchTargetSizeCheck" />
     </FrameLayout>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="460dp"
-        android:layout_height="70dp"
-        android:background="@color/material_dynamic_neutral10"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="VisualLintBounds" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="67dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
-        android:contentDescription="@string/iconcrm"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconCRM" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="5dp"
-        android:contentDescription="@string/menu_readable_text"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_menu_24"
-        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

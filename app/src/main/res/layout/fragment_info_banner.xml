@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InfoBannerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="410dp"
+        android:layout_height="250dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView">
+
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/titleTextView"
+            android:textColor="#fffffb"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="18dp"
+            android:text="@string/descriptionTextView"
+            android:textColor="#fffffb"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView"
+            tools:ignore="TextContrastCheck" />
+
+
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="70dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="160dp"
+            android:backgroundTint="#00BCD9A0"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text=""
+            android:textAlignment="center"
+            app:cornerRadius="40dp"
+            app:icon="@drawable/next_right"
+            app:iconPadding="0dp"
+            app:iconSize="35dp"
+            app:iconTint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/button_Next_Info"
+            />
+
+        <Button
+            android:id="@+id/buttonPrevious"
+            android:layout_width="70dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="160dp"
+            android:backgroundTint="#00BCD9A0"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text=""
+            android:textAlignment="center"
+            app:cornerRadius="40dp"
+            app:icon="@drawable/previous_left"
+            app:iconPadding="0dp"
+            app:iconSize="35dp"
+            app:iconTint="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/button_Previous_Info"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

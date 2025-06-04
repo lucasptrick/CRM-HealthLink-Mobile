@@ -10,5 +10,25 @@
     <string name="text_h3">Selecione uma Data:</string>
     <string name="input_selecionar_data">dd/mm/aaaa</string>
     <string name="button_MarcarConsulta">Marcar Consulta</string>
+    <string name="button_MinhasConsultas">Minhas Consultas</string>
+    <string name="text_InfoConsultas">Informações sobre a Consulta (...)</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_Next_Info">-.</string>
+    <string name="button_Previous_Info">.-</string>
+    <string name="descriptionTextView">Texto de descrição</string>
+    <string name="titleTextView">Título</string>
+    <string name="menu_hidden">Menu</string>
+    <string name="agendar_consultas_btn">Agendar Consultas</string>
+    <string name="minhas_consultas_hidden">Minhas Consultas</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>

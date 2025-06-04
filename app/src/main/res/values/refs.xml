@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="baseline_event_available_24">agendar_consulta_btn</drawable>
+    <drawable name="baseline_calendar_month_24">minhas_consultas_btn</drawable>
+</resources>
