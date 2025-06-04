@@ -1,9 +1,10 @@
 package com.lpro.crm_healthlink
 
 import android.os.Bundle
-import android.view.View
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 
 class PatientActivity : AppCompatActivity(),
     HeaderFragment.OnMenuButtonClickListener {
@@ -13,27 +14,35 @@ class PatientActivity : AppCompatActivity(),
         enableEdgeToEdge()
         setContentView(R.layout.activity_patient)
 
-        // Ao iniciar, mostrar apenas o Agendar Consulta
-        showAgendarFragment()
+        // Carregar o fragmento padrão (Agendar Consulta)
+        loadFragment(AgendarConsultaFragment())
+
+        // Configurar botões inferiores
+        val buttonAgendar = findViewById<Button>(R.id.buttonAgendar)
+        val buttonMinhasConsultas = findViewById<Button>(R.id.buttonMinhasConsultas)
+
+        buttonAgendar.setOnClickListener {
+            loadFragment(AgendarConsultaFragment())
+        }
+
+        buttonMinhasConsultas.setOnClickListener {
+            loadFragment(MinhasConsultasFragment())
+        }
     }
 
-    // Quando clicar em "Agendar Consultas"
+    // Implementação dos botões do header
     override fun onAgendarConsultasClicked() {
-        showAgendarFragment()
+        loadFragment(AgendarConsultaFragment())
     }
 
-    // Quando clicar em "Minhas Consultas"
     override fun onMinhasConsultasClicked() {
-        showMinhasConsultasFragment()
+        loadFragment(MinhasConsultasFragment())
     }
 
-    private fun showAgendarFragment() {
-        findViewById<View>(R.id.fragmentContainerViewAgendar).visibility = View.VISIBLE
-        findViewById<View>(R.id.fragmentContainerViewMinhasConsultas).visibility = View.GONE
-    }
-
-    private fun showMinhasConsultasFragment() {
-        findViewById<View>(R.id.fragmentContainerViewAgendar).visibility = View.GONE
-        findViewById<View>(R.id.fragmentContainerViewMinhasConsultas).visibility = View.VISIBLE
+    // Função genérica para trocar fragments
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainerViewContent, fragment)
+            .commit()
     }
 }
